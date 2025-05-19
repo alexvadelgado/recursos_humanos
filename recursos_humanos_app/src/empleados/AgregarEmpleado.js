@@ -20,7 +20,7 @@ export default function AgregarEmpleado() {
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        const urlBase = "http://localhost:8080/rh-app/empleados";
+        const urlBase = "http://192.168.30.32:8080/rh-app/empleados";
         await axios.post(urlBase, empleado);
         // Redirigimos a la pagina de inicio
         navegacion('/');
